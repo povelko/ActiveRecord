@@ -1,0 +1,22 @@
+<h2>Страница для сохранения контактов</h2	>
+<form action="/contacts" method="POST">
+ <div class="form-group">
+    <label>Введите ФИО</label>
+    <input name="fio" type="text" class="form-control" placeholder="Образец:Иванов Иван Иванович" value="<%= @fio %>">
+</div> 
+ <div class="form-group">
+    <label>Введите эл. почту</label>
+    <input name="email" type="email" class="form-control" placeholder="Образец:ruby@buby.ru" value="<%= @email %>">
+  </div> 
+<div class="form-group">
+    <label>Введите сотовый телефон</label>
+    <input name="sotik" type="tel" pattern="8[0-9]{3}[0-9]{7}" class="form-control" placeholder="Образец:89507894562" value="<%= @sotik %>">
+</div> 
+<div class="form-group">
+    <label>Введите примечание к контакту</label>
+    <input name="discription" type="text" class="form-control" placeholder="Образец:Отправлять письма по понедельникам!" value="<%= @discription %>">
+</div> 
+
+<button type="submit">Сохранить</button> 
+</form>
+

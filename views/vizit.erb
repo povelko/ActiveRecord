@@ -3,25 +3,25 @@
 <form action="/vizit" method="POST">
   <div class="form-group">
     <label>Введите данные клиента</label>
-    <input name="username" type="text" class="form-control" placeholder="Введите данные пациента" value="<%= @username %>">
+    <input name="client[name]" type="text" class="form-control" placeholder="Введите данные пациента" value="">
   </div>
   
   <div class="form-group">
     <label>Введите дату</label>
-    <input name="date" type="datetime-local" class="form-control" placeholder="Введите дату" value="<%= @date %>">
+    <input name="client[date]" type="datetime-local" class="form-control" placeholder="Введите дату" value="">
   </div>
   <div class="form-group">
     <label>Введите сотовый телефон</label>
-    <input name="phone" type="tel" pattern="8[0-9]{3}[0-9]{7}" class="form-control" placeholder="Образец:89507894562" value="<%= @phone %>">
+    <input name="client[phone]" type="tel" pattern="8[0-9]{3}[0-9]{7}" class="form-control" placeholder="Образец:89507894562" value="">
   </div> 
   <div class="form-group">
     <label>Выберите парикмахера</label>
-    <input name="barber" type="text" class="form-control" placeholder="Введите данные пациента" value="<%= @barber %>">
+    <input name="client[barber]" type="text" class="form-control" placeholder="Введите данные пациента" value="">
   </div>
   <div class="form-group">
   <label>Выберите цвет: </label>
 
-    <select id='color' name = 'color'>
+    <select id='color' name = 'client[color]'>
       <option value="#7bd148">Green</option>
       <option value="#5484ed">Bold blue</option>
       <option value="#a4bdfc">Blue</option>

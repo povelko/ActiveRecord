@@ -4,3 +4,13 @@
 <%= x.name %>
 </p>
 <% end %>
+
+<h2>Список контактов</h2>
+<% @contacts.each do |x| %>
+<p>
+|<%= x.fio %>|
+<i><%= x.email %></i>|
+<B><%= x.sotik %></B>|
+<%= x.discription %>|
+</p>
+<% end %>
